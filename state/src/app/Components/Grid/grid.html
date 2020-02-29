@@ -3,5 +3,17 @@
         <span>{{i.name}}</span>
         <span>{{i.price}}</span>
         <span>{{i.description}}</span>
+        <button (click)='addToCart(i)'>Add to Cart</button>
+    </li>
+</div>
+
+<hr>
+
+<div>
+    <h1>Cart</h1>
+
+    <li *ngFor='let i of cart$'>
+        <span>{{i.name}}</span>
+        <span>{{i.price}}</span>
     </li>
 </div>
