@@ -21,7 +21,7 @@ export class GridComponent implements OnInit{
     }
 
     public cart$: Cart
-    public productList: Product[] = data.default
+    public productList: Product[] = data.map(x => x)
 
     ngOnInit() {
       console.log(this.productList)
